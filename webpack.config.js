@@ -1,4 +1,3 @@
-// webpack v4
 const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -6,8 +5,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: { main: "./src/js/index.js" },
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "main.js"
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].[chunkhash].js'
   },
   devtool: 'source-map',
   module: {
@@ -29,7 +28,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin({ filename: "style.css" }),
+    new ExtractTextPlugin(
+      {filename: 'style.[chunkhash].css', disable: false, allChunks: true}
+    ),
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
