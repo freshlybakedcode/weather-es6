@@ -1,12 +1,15 @@
 module.exports = {
-  plugins: [require("autoprefixer")]
+  plugins: [
+    require("autoprefixer"),
+    // require("cssnano")({
+    //   preset: [
+    //     "default",
+    //     {
+    //       discardComments: {
+    //         removeAll: true
+    //       }
+    //     }
+    //   ]
+    // })
+  ]
 };
-
-// module.exports = {
-//   parser: 'sugarss',
-//   plugins: {
-//     'postcss-import': {},
-//     'postcss-cssnext': {},
-//     'cssnano': {}
-//   }
-// }
