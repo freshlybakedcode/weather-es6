@@ -1,0 +1,9 @@
+# Browsers that we support
+
+#cover 99.5%
+#> 1%
+
+defaults
+IE 10 # sorry
+
+#`npm browserslist` from CLI to display list
