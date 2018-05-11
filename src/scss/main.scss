@@ -8,10 +8,10 @@ h1 {
 	text-align: center;
 }
 div {
-	.someClass {
-		color: pink;
+	&.someClass {
+		color: rosybrown;
 	}
-	.isItSassy {
+	&.isItSassy {
 		border: 1px solid red;
 	}
 }

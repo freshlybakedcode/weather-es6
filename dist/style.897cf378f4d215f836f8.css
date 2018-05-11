@@ -7,10 +7,9 @@ h1 {
   font-size: 2em;
   text-align: center; }
 
-div .someClass {
-  color: pink; }
+div.someClass {
+  color: rosybrown; }
 
-div .isItSassy {
+div.isItSassy {
   border: 1px solid red; }
 
-/*# sourceMappingURL=style.1eed738a18339066dadb.css.map*/
