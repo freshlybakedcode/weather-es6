@@ -2,7 +2,7 @@
 Webapp boilerplate using webpack 4 for bundling, task running etc.
 
 ## How to use
-* TODO: Start dev build in server and watch with `npm start` (navigate to `localhost:8080`)
+* Start dev build in server and watch with `npm start` (navigate to `localhost:8080`)
 * Single dev build only with `npm run dev`
 * Production build with `npm run build`
 
