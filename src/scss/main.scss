@@ -13,5 +13,10 @@ div {
 	}
 	&.isItSassy {
 		border: 1px solid red;
+		box-shadow: 1px 1px 1px 1px rgb(100,140,100);
 	}
 }
+
+::placeholder {
+	color: gray;
+  }

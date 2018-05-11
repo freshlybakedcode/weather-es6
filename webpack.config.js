@@ -26,6 +26,7 @@ module.exports = {
           "style-loader",
           MiniCssExtractPlugin.loader,
           "css-loader",
+          'postcss-loader',
           "sass-loader"
         ]
       }
@@ -42,6 +43,6 @@ module.exports = {
       filename: "index.html"
     }),
     new WebpackMd5Hash(),
-    new CleanWebpackPlugin(["dist/*.js", "dist/*.css"])
+    new CleanWebpackPlugin(["dist/*.js*", "dist/*.css*"]),
   ]
 };
