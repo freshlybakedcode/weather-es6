@@ -1,9 +1,9 @@
-// webpack v4
 const path = require("path");
-// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackMd5Hash = require("webpack-md5-hash");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+
 module.exports = {
   entry: { main: "./src/js/index.js" },
   output: {
@@ -31,9 +31,6 @@ module.exports = {
     ]
   },
   plugins: [
-    // new ExtractTextPlugin(
-    //   {filename: 'style.[hash].css', disable: false, allChunks: true }
-    // ),
     new MiniCssExtractPlugin({
       filename: "style.[contenthash].css"
     }),
@@ -43,6 +40,7 @@ module.exports = {
       template: "./src/index.html",
       filename: "index.html"
     }),
-    new WebpackMd5Hash()
+    new WebpackMd5Hash(),
+    new CleanWebpackPlugin(["dist/*.js", "dist/*.css"])
   ]
 };
