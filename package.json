@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --watch --mode development",
+    "start": "webpack-dev-server --open --watch --mode development",
     "dev": "webpack --mode development",
-    "dist": "webpack --mode production"
+    "dist": "webpack --mode production",
+    "unbreak": "rm -rf node_modules && npm cache clear --force && npm install"
   },
   "author": "",
   "license": "ISC",

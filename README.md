@@ -1,5 +1,5 @@
 # webpack-boilerplate
-Webapp boilerplate using webpack 4 for bundling, task running etc.
+Webapp boilerplate using Webpack 4 for bundling, task running etc.
 
 ## How to use
 * Start dev build in server and watch with `npm start` (navigate to `localhost:8080`)
@@ -13,3 +13,8 @@ Webapp boilerplate using webpack 4 for bundling, task running etc.
 * SCSS compiled to CSS on build
 * JS transpiled to ES5 on build
 * Prod build minifies JS
+* Browser auto refresh on HTML/CSS/JS update
+* CSS autoprefixer on save
+
+## Anything else?
+* Sometimes Node goes wrong and throws an "Error: `sass-loader` requires `node-sass` >=4".  You can run `npm run unbreak` to resolve this.
