@@ -17,4 +17,4 @@ Webapp boilerplate using Webpack 4 for bundling, task running etc.
 * CSS autoprefixer on save
 
 ## Anything else?
-* Sometimes Node goes wrong and throws an "Error: `sass-loader` requires `node-sass` >=4".  You can run `npm run unbreak` to resolve this.
+* Sometimes Node goes wrong and throws an "Error: 'sass-loader' requires 'node-sass' >=4".  You can run `npm run unbreak` to resolve this.
