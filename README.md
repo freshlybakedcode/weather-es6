@@ -5,6 +5,7 @@ Webapp boilerplate using Webpack 4 for bundling, task running etc.  It comes wit
 * Start dev build in server and watch with `npm start` (will automatically navigate to `localhost:8080`)
 * Single dev build only with `npm run dev`
 * Production build with `npm run build`
+* From the root folder, `npm test` will execute all the tests tests directory
 
 ## Notes and stuff this does:
 * Work on product from `/src` directory
