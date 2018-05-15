@@ -1,5 +1,5 @@
 # webpack-boilerplate
-Webapp boilerplate using Webpack 4 for bundling, task running etc.
+Webapp boilerplate using Webpack 4 for bundling, task running etc.  It comes with a few base SCSS files and a JS test runner as well.
 
 ## How to use
 * Start dev build in server and watch with `npm start` (will automatically navigate to `localhost:8080`)

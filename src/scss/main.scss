@@ -1,12 +1,5 @@
-* {
-	box-sizing: border-box;
-}
-h1 {
-	color: rebeccapurple;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 2em;
-	text-align: center;
-}
+
+
 div {
 	&.someClasses {
 		color: rosybrown;
@@ -20,3 +13,17 @@ div {
 ::placeholder {
 	color: gray;
 }
+
+// Helpers
+@import 'helpers/base';
+@import 'helpers/parameters';
+@import 'helpers/functions';
+@import 'helpers/mixins.button';
+@import 'helpers/typography';
+
+// Components
+@import 'components/buttons';
+
+// Pages
+
+// Layout

@@ -24,11 +24,30 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          "style-loader",
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          'postcss-loader',
-          "sass-loader"
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true
+            }
+          }
         ]
       }
     ]
@@ -44,6 +63,6 @@ module.exports = {
       filename: "index.html"
     }),
     new WebpackMd5Hash(),
-    new CleanWebpackPlugin(["dist/*.js*", "dist/*.css*"]),
+    new CleanWebpackPlugin(["dist/*.js*", "dist/*.css*"])
   ]
 };

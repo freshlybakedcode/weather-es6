@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --watch --mode development",
+    "start": "webpack-dev-server --debug --devtool source-map --open --watch --mode development",
     "dev": "webpack --mode development",
     "dist": "webpack --mode production",
     "unbreak": "rm -rf node_modules && npm cache clear --force && npm install"
