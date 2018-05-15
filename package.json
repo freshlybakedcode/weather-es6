@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --debug --devtool source-map --open --watch --mode development",
     "dev": "webpack --mode development",
     "dist": "webpack --mode production",
-    "test": "mocha --require babel-core/register './tests/**/**.test.js'",
+    "test": "mocha --require babel-core/register './tests/**/**.test.js' --reporter nyan",
     "unbreak": "rm -rf node_modules && npm cache clear --force && npm install"
   },
   "author": "",
