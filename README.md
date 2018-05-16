@@ -19,4 +19,4 @@ Webapp boilerplate using Webpack 4 for bundling, task running etc.  It comes wit
 * Mocha for testing with Node assert lib
 
 ## Anything else?
-* Sometimes Node goes wrong and throws an "Error: 'sass-loader' requires 'node-sass' >=4".  You can run `npm run unbreak` to resolve this.
+* Sometimes Node goes wrong and throws an _"Error: 'sass-loader' requires 'node-sass' >=4"_.  You can run `npm run unbreak` to resolve this.
