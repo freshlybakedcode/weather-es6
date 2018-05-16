@@ -13,7 +13,7 @@ Webapp boilerplate using Webpack 4 for bundling, task running etc.  It comes wit
 * Source maps are generated for SCSS and JS
 * SCSS compiled to CSS on build
 * JS transpiled to ES5 on build
-* Prod build minifies JS
+* Prod build minifies JS and CSS
 * Browser auto refresh on HTML/CSS/JS update
 * CSS autoprefixer on save
 * Mocha for testing with Node assert lib
