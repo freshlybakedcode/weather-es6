@@ -16,6 +16,7 @@ const updateWeather = function updateWeather(weatherData) {
 const searchWeather = function searchWeather() {
   const cityName = ELEMENTS.ELEMENT_SEARCH_CITY.value.trim();
   if (cityName.length > 0) {
+    ELEMENTS.ELEMENT_LOADING_TEXT.style.display = 'block';
     console.log(cityName);
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=${units}&appid=${appId}`;
     Http.fetchData(url)
@@ -24,6 +25,7 @@ const searchWeather = function searchWeather() {
         const currentWeatherData = new WeatherData(cityName, responseData.weather[0].description);
         const weatherProxy = new Proxy(currentWeatherData, weatherProxyHandler);
         weatherProxy.temperature = responseData.main.temp;
+        ELEMENTS.ELEMENT_LOADING_TEXT.style.display = 'none';
         updateWeather(weatherProxy);
       })
       .catch(error => console.log(error));

@@ -12,6 +12,7 @@ export const weatherProxyHandler = {
   },
   set(target, property, value) {
     const newValue = `${((value * 1.8) + 32).toFixed(2)}F.`;
+    this.tempC = false;
     return Reflect.set(target, property, newValue);
   },
 };
